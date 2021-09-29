@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-	return "Yes!!! Simple Flask Application is work!!! FULL AUTO DEPLOY!!!"
+	return "DEPLOY IS SUCCESSFUL"
 
 
 if __name__ == "__main__":
