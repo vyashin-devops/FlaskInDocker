@@ -6,11 +6,8 @@ on:
       - main
  
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     
       - name: Check Out Repo 
@@ -34,8 +31,19 @@ jobs:
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
 
-      - name: executing remote ssh commands using ssh key
+      - name: First executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
+        continue-on-error: true
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+#         port: ${{ secrets.PORT }}
+          script: docker kill $(docker ps -q) && docker rm -f $(docker ps -a -q) && docker rmi $(docker images -q)
+        
+      - name: Second executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@master
+        #continue-on-error: true
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
