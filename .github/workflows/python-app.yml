@@ -33,3 +33,12 @@ jobs:
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
+
+      - name: executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+#         port: ${{ secrets.PORT }}
+          script: docker run --name flaskindocker -d -p 5001:5001 yashinv/flaskindocker
