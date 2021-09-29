@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-	return "DEPLOY IS SUCCESSFUL"
+	return "CI/CD IS SUCCESSFULL"
 
 
 if __name__ == "__main__":
