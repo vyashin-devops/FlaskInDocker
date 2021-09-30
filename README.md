@@ -9,7 +9,7 @@ Status of Last Deployment:<br>
 
 Copyleft by Vyacheslav Yashin 2021.
 
-# FlaskInDocker
-# Command to start docker container - 
-#       docker run --name flaskindocker -d -p 5001:5001 yashinv/flaskindocker
-# Web-Site - https://www.geeksforgeeks.org/dockerize-your-flask-app/
+<font size="10" color="green" face="Tahoma">FlaskInDocker</font>
+<font size="10" color="green" face="Tahoma">Command to start docker container - 
+docker run --name flaskindocker -d -p 5001:5001 yashinv/flaskindocker</font>
+<font size="10" color="green" face="Tahoma">Web-Site - https://www.geeksforgeeks.org/dockerize-your-flask-app/</font>
