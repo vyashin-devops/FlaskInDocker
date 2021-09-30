@@ -2,7 +2,7 @@
 
 
 
-Status of Last Deployment:<br><br>
+Status of Last Deployment:<br>
 <img src="https://github.com/vyashin-devops/FlaskInDocker/workflows/Docker-Flask-Application-EC2/badge.svg?branch=main"><br>
 
 
