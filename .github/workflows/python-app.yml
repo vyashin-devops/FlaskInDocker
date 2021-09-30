@@ -33,7 +33,6 @@ jobs:
 
       - name: First executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
-#       uses: vyashin-devops/FlaskInDocker@main
         continue-on-error: true
         with:
           host: ${{ secrets.HOST }}
