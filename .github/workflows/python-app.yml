@@ -7,7 +7,7 @@
 # Made by Vyacheslav Yashin Copyleft (c)  2021 
 #-------------------------------------------------------------------------------------------------------------------
 
-name: Docker Image CI
+name: Docker-Flask-Application-EC2
 
 on:
   push:
