@@ -7,7 +7,7 @@ Status of Last Deployment:<br>
 
 
 
-Copyleft by Vyacheslav Yashin 2021.
+Copyleft by Vyacheslav Yashin 2021
 
 <font size="10" color="green" face="Tahoma">FlaskInDocker</font>
 <font size="10" color="green" face="Tahoma">Command to start docker container - 
