@@ -6,7 +6,7 @@ on:
       - main
  
 jobs:
-  build:
+  Build_and_push_to_Docker:
     runs-on: ubuntu-latest
     steps:
     
@@ -31,6 +31,12 @@ jobs:
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
 
+
+  Remote_ssh_commands:
+    runs-on: ubuntu-latest
+    needs: [Build_and_push_to_Docker]
+    steps:
+    
       - name: First executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
         continue-on-error: true
