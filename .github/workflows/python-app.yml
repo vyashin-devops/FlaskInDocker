@@ -39,7 +39,8 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
 #         port: ${{ secrets.PORT }}
-          script: docker kill $(docker ps -q) && docker rm -f $(docker ps -a -q) && docker rmi $(docker images -q)
+          script: docker rm -f $(docker ps -a -q) && docker rmi $(docker images -q)
+          # docker kill $(docker ps -q) && 
         
       - name: Second executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
