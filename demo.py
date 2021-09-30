@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-	return "CI/CD IS SUCCESSFULL"
+	return "FLASK2DOCKER CI/CD IS SUCCESSFULL"
 
 
 if __name__ == "__main__":
