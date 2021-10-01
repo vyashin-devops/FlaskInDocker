@@ -2,7 +2,7 @@
 # GitHub Action Workflow to build and push Docker Flask Application to Docker Hub and run container on EC2 Instance  
 #
 # Version      Date        Info
-# 1.0          2021        Initial Version
+# 2.0          2021        Initial Version
 #
 # Made by Vyacheslav Yashin Copyleft (c)  2021 
 #-------------------------------------------------------------------------------------------------------------------
